@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <main>
+        <form action="submit.php">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your Name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Your Email" required><br><br>
+            <label for="gender">Your gender:</label>
+            <table>
+                <thead>
+                    <tr>
+                        <th><label for="male">Male:</label></th>
+                        <th><input type="radio" name="gender" id="male" value="male"></th>
+                    </tr>
+                    <tr>
+                        <th><label for="female">Female:</label></th>
+                        <th><input type="radio" name="gender" id="female" value="female"></th>
+                    </tr>
+                    <tr>
+                        <th><label for="other">Other:</label></th>
+                        <th><input type="radio" name="gender" id="other" value="other"></th>
+                    </tr>
+                </thead>
+            </table><br>
+            <label for="select-country">Select your country:</label>
+            <select name="country" id="select-country">
+                <option value="">--Select your country--</option>
+                <option value="pakistan">Pakistan</option>
+                <option value="dubai">Dubai</option>
+                <option value="canada">Canada</option>
+            </select><br><br>
+            <label for="submission-date">Submission date:</label>
+            <input type="date" name="date" id="submission-date"><br><br>
+            <label for="your-query">Your query:</label><br>
+            <textarea name="query" id="your-query" cols="40" rows="15">Your query</textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+</body>
+</html>
